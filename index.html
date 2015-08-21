@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Ajax Page</title>
+</head>
+<body>
+  <script>
+    setTimeout(function () {
+
+      var paragraph = document.createElement('p');
+      var text = document.createTextNode('BUBBLES');
+      paragraph.appendChild(text);
+
+      document.getElementById('intervalTestContent').appendChild(paragraph);
+    }, 5000);
+  </script>
+
+  <h1>
+    Test Ajax Page
+  </h1>
+
+  A simple web page that can be used to test scraping libraries.
+
+
+  <div id="Interval Test">
+    <h3>Set Timeout Test</h3>
+    <em>'BUBBLES' should appear below after 5 seconds:</em>
+    <div id="intervalTestContent">
+    </div>
+  </div>
+
+</body>
+</html>
