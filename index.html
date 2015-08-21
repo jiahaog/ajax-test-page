@@ -8,11 +8,12 @@
   <script>
     setTimeout(function () {
 
-      var paragraph = document.createElement('p');
+      var paragraph = document.createElement('div');
+      paragraph.setAttribute('id', 'setTimeoutContent');
       var text = document.createTextNode('BUBBLES');
       paragraph.appendChild(text);
 
-      document.getElementById('intervalTestContent').appendChild(paragraph);
+      document.getElementById('interval-test').appendChild(paragraph);
     }, 5000);
   </script>
 
@@ -23,11 +24,10 @@
   A simple web page that can be used to test scraping libraries.
 
 
-  <div id="Interval Test">
+  <div id="interval-test">
     <h3>Set Timeout Test</h3>
-    <em>'BUBBLES' should appear below after 5 seconds:</em>
-    <div id="intervalTestContent">
-    </div>
+    <em>'BUBBLES' should appear in div id="setTimeoutContent" below after 5 seconds:</em>
+
   </div>
 
 </body>
