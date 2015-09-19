@@ -5,19 +5,7 @@
   <title>Test Ajax Page</title>
 </head>
 <body>
-  <script>
-    setTimeout(function () {
 
-      var paragraph = document.createElement('div');
-      paragraph.setAttribute('id', 'setTimeoutContent');
-      // BUBBLES HI is not contained in the dom initially, used to test to check if the
-      // dom contains the string
-      var text = document.createTextNode('BUBBLES HI');
-      paragraph.appendChild(text);
-
-      document.getElementById('interval-test').appendChild(paragraph);
-    }, 5000);
-  </script>
 
   <h1>
     Test Ajax Page
@@ -45,5 +33,6 @@
     </form>
   </div>
 
+  <script src="assets/ajaxScript.js"></script>
 </body>
 </html>
