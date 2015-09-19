@@ -2,6 +2,8 @@
  * Created by JiaHao on 19/9/15.
  */
 
+var WAIT_INTERVAL = 2000;
+
 setTimeout(function () {
 
     var paragraph = document.createElement('div');
@@ -12,4 +14,4 @@ setTimeout(function () {
     paragraph.appendChild(text);
 
     document.getElementById('interval-test').appendChild(paragraph);
-}, 5000);
+}, WAIT_INTERVAL);
