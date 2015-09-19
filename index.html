@@ -10,7 +10,9 @@
 
       var paragraph = document.createElement('div');
       paragraph.setAttribute('id', 'setTimeoutContent');
-      var text = document.createTextNode('BUBBLES');
+      // BUBBLES HI is not contained in the dom initially, used to test to check if the
+      // dom contains the string
+      var text = document.createTextNode('BUBBLES HI');
       paragraph.appendChild(text);
 
       document.getElementById('interval-test').appendChild(paragraph);
@@ -33,7 +35,7 @@
     <h3>Form Test</h3>
     <em>Username id="#form-username", password id="#form-password"</em>
     <br>
-    
+
     <form>
       Username:<br>
       <input id="form-username" type="text">
