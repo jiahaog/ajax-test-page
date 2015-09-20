@@ -12,11 +12,13 @@
  * @param {int} index
  */
 function changeDropdownIndex(selector, index) {
+    // https://jesse.sh/select-change-events-javascript/
     var element = document.querySelector(selector);
     element.selectedIndex = index;
 
     // event is needed because listeners to the change do not react to
     // programmatic changes
+    // http://stackoverflow.com/a/7055771
     var event = document.createEvent('Event');
     event.initEvent('change', true, false);
     element.dispatchEvent(event);
