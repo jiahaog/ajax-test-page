@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Button Test</title>
+  <script src="scripts/helpers.js"></script>
+</head>
+<body>
+  <div id="ajax-button-test">
+    <h3>Ajax button test</h3>
+    <button type="button" id="ajax-button">Trigger DOM change</button>
+    <br>
+    <em>2 seconds after pressing the button selector: <strong>"#ajax-button"</strong>, 'CAKES ARE AWESOME' will appear in div selector: <strong>"#ajax-button-result"</strong> below.</em>
+    <br>
+    <em>We separate this page from the previous one as the Revenant scraper listens for page change by measuring Levenshtein distance change in the DOM, and we do not want to be affected by the setTimeout test on the homepage.</em>
+  </div>
+  <script src="scripts/ajaxButtonTest.js"></script>
+
+</body>
+</html>
