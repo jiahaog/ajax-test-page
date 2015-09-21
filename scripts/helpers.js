@@ -23,3 +23,12 @@ function addTextToDom(text, textId, idToAddTo) {
 
     document.getElementById(idToAddTo).appendChild(paragraph);
 }
+
+/**
+ * Sets the inner HTML of a selector
+ * @param {string} selector
+ * @param {string} value
+ */
+function setSelectorInnerHtml(selector, value) {
+    document.querySelector(selector).innerHTML = value;
+}
