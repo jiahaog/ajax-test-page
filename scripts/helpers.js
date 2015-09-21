@@ -4,7 +4,7 @@
 
 
 // Constant to set the wait interval for ajax functions across pages
-var WAIT_INTERVAL = 10000;
+var WAIT_INTERVAL = 2000;
 
 /**
  * Helper function to add a div with a string to a the dom at a certain location
