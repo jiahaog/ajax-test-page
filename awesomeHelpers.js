@@ -1,6 +1,8 @@
 /**
  * Awesome helpers to manipulate the page in plain javascript
  *
+ * Just for reference only, not called at all
+ *
  * Created by JiaHao on 20/9/15.
  */
 
@@ -22,4 +24,23 @@ function changeDropdownIndex(selector, index) {
     var event = document.createEvent('Event');
     event.initEvent('change', true, false);
     element.dispatchEvent(event);
+}
+
+/**
+ * Click a selector on the page
+ * @param selector
+ * @returns {*}
+ */
+function clickSelector(selector) {
+    var button = document.querySelector(selector);
+    var ev = document.createEvent("MouseEvent");
+    ev.initMouseEvent(
+        "click",
+        true /* bubble */, true /* cancelable */,
+        window, null,
+        0, 0, 0, 0, /* coordinates */
+        false, false, false, false, /* modifier keys */
+        0 /*left*/, null
+    );
+    button.dispatchEvent(ev);
 }
